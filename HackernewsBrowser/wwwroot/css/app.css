@@ -1,22 +1,48 @@
-﻿/* Carbon-like buttons */
-.mud-button-filled.mud-button-filled-primary {
-    letter-spacing: 0.02rem;
-    text-transform: uppercase;
-    font-weight: 100;
+﻿html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Carbon-like cards */
-.mud-paper {
-    border-radius: 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+h1:focus {
+    outline: none;
 }
 
-/* Carbon-like input fields */
-.mud-input.mud-input-underline:before {
-    border-bottom: 1px solid #525252;
+a, .btn-link {
+    color: #0071c1;
 }
 
-/* Carbon-like tabs */
-.mud-tabs .mud-tab-active {
-    border-bottom: 2px solid #0f62fe;
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }

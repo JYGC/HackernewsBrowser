@@ -10,17 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\index.html" />
-    <ApplicationDefinition Remove="App.xaml" />
-    <EmbeddedResource Include="wwwroot\index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <Page Include="App.xaml" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.110" />
+    <PackageReference Include="MudBlazor" Version="8.12.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.110" />
-    <PackageReference Include="MudBlazor" Version="8.12.0" />
+    <Folder Include="wwwroot\css\bootstrap\" />
   </ItemGroup>
 
   <ItemGroup>

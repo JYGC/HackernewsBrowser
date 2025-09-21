@@ -31,17 +31,15 @@ module TopStories =
         HackernewsStories.storyBrowser
             storyIdsAval
             isLoadingCval
-            (
-                fragment {
-                    MudText''{
-                        Typo Typo.h3
-                        "Top Stories"
-                    }
-                    MudSpacer''{}
-                    MudText''{
-                        Typo Typo.subtitle2
-                        $"Total: {List.length storyIdsAval.Value}"
-                    }
+            (fragment {
+                MudText''{
+                    Typo Typo.h3
+                    "Top Stories"
                 }
-            )
+                MudSpacer''{}
+                MudText''{
+                    Typo Typo.subtitle2
+                    $"Total: {List.length storyIdsAval.Value}"
+                }
+            })
     )
