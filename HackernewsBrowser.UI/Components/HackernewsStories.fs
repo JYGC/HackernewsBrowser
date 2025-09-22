@@ -5,11 +5,11 @@ open Fun.Blazor
 open MudBlazor
 
 module HackernewsStories =
-    let storyBrowser (storyIdsAval: aval<int list>) (isLoadingCval: cval<bool>) (toolbarContent: NodeRenderFragment) =
+    let storyBrowser (storyIdsAval: aval<int list>) (isLoadingAval: aval<bool>) (toolbarContent: NodeRenderFragment) =
         fragment {
             adapt {
                 let! storyIds = storyIdsAval
-                let! isLoading = isLoadingCval
+                let! isLoading = isLoadingAval
                 MudTable''{
                     Items storyIds
                     Breakpoint Breakpoint.Sm
