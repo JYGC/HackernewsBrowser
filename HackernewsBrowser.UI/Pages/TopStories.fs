@@ -30,7 +30,7 @@ module TopStories =
 
         HackernewsStories.storyBrowser
             storyIdsAval
-            isLoadingCval
+            (isLoadingCval :> aval<_>)
             (fragment {
                 MudText''{
                     Typo Typo.h3
